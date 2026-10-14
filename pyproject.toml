@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mutalyasis"
+version = "0.1.0"
+description = "A lightweight mutation-testing CLI for Python projects"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[project.scripts]
+mutalyasis = "mutalyasis.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mutalyasis*"]
